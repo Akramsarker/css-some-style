@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before & after</title>
+    <style>
+    .is-required:after{
+        content: '*';
+        color: red;
+        padding-left: 2px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: black;
+        color: white;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        height: 100vh;
+       
+    }
+    header > h1{
+        font-size: 5rem;
+        margin: 1rem;
+    }
+    header:before{
+        content: '';
+        background: url(picture.jpg) no-repeat center center/cover;
+        opacity: 0.5;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+       
+    }
+
+    </style>
+</head>
+<body>
+   <label class="is-required" for="name">name</label>
+    <input type="text">
+
+    <header>
+      <h1>hello warld</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quam ab accusamus perspiciatis corporis rem magni adipisci voluptatibus blanditiis excepturi.</p>
+    </header>
+    <section>
+        <h3>hello warld</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium esse voluptas quia earum cumque corporis ipsam sunt explicabo totam eum?</p>
+    </section>
+</body>
+</html>

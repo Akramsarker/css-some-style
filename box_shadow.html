@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow</title>
+    <style>
+     .container{
+         display: flex;
+     }
+     .box{
+         padding: 1rem;
+         margin: 1rem;
+         background: #122203;
+         color:#fff;
+
+          /*offset-x offset-y  color*/
+         box-shadow: 10px 10px  gold;
+         
+
+        /* offset-x offset-y blur-radious color*/
+         box-shadow: -10 -10px 20px darkkhaki;
+         
+
+        /*negative values*/
+         box-shadow: -10px -10px  green;
+        
+        /* inset offset-x offset-y  color*/
+         box-shadow: inset 10px 10px  blue;
+       
+       /*offset-x offset-y blur-radius spread-radius color*/
+       box-shadow:10p 10px 20px 2px rgb(66, 17, 90);
+
+       /*multipul shadows*/
+       box-shadow: 10px 10px 10px grey -10px -10px  20px gold;
+
+     }
+       
+     
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident ex maxime et, magni fugit doloribus suscipit! A, accusantium officiis. Quos blanditiis saepe ad ipsa tempore impedit voluptatem dignissimos accusamus exercitationem! Ullam, dolorem natus? Nobis mollitia repudiandae optio laboriosam pariatur?</p>
+        </div>
+        <div class="box">
+            <h1>heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident ex maxime et, magni fugit doloribus suscipit! A, accusantium officiis. Quos blanditiis saepe ad ipsa tempore impedit voluptatem dignissimos accusamus exercitationem! Ullam, dolorem natus? Nobis mollitia repudiandae optio laboriosam pariatur?</p>
+        </div>
+        <div class="box">
+            <h1>heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident ex maxime et, magni fugit doloribus suscipit! A, accusantium officiis. Quos blanditiis saepe ad ipsa tempore impedit voluptatem dignissimos accusamus exercitationem! Ullam, dolorem natus? Nobis mollitia repudiandae optio laboriosam pariatur?</p>
+        </div>
+    </div>
+</body>
+</html>
